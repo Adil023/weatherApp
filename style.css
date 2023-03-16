@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
+*{
+    font-family: 'Asap', sans-serif;
+    color:#06283D ;
+    font-weight: bold;
+}
+
+body{
+    background-color: #06283D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+.container > .serachBox{
+    padding-top: 10px;
+    height: 50px;
+}
+
+.container > .error{
+    height: 350px;
+    display: none;
+    
+}
+
+.container > .serachBox > input{
+    width: 200px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px; 
+    margin: 0 2px;
+    text-transform:capitalize;
+}
+
+.container > .serachBox > i{
+    font-size: 25px;
+}
+
+.container > .serachBox > i:nth-child(3){
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #C8DCF5;
+}
+
+.container > .serachBox > i:nth-child(3):hover{
+    background-color:#06283D;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    color: white;
+}
+
+.container > .weatherBox{
+    height:350px ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    gap: 10px ;
+    
+}
+
+.container > .weatherBox > img{
+    width: 200px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container > .weatherBox >div> span{
+    font-weight: bold;
+    
+    text-align: center;
+}
+
+.container > .weatherBox > div>span:nth-child(3){
+    text-align: center !important;
+    
+
+}
+
+.humiditywind{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.humiditywind > .humidity,
+.humiditywind > .windSpeed{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.humiditywind > .humidity > i,
+.humiditywind > .windSpeed > i{
+    font-size: 30px;
+}
+
+
